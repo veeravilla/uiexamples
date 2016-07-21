@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<!-- If IE use the latest rendering engine -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<!-- Set the page to the width of the device and set the zoon level -->
+	<meta name="viewport" content="width = device-width, initial-scale = 1">
+	<title>Bootstrap Tutorial</title>
+	
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<style>
+		.jumbotron{
+			background-color:#2E2D88;
+			color:white;
+		}
+		/* Adds borders for tabs */
+		.tab-content {
+			border-left: 1px solid #ddd;
+			border-right: 1px solid #ddd;
+			border-bottom: 1px solid #ddd;
+			padding: 10px;
+		}
+		.nav-tabs {
+			margin-bottom: 0;
+		}
+	</style>
+
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+
+				<!-- We can collapse or hide data on the screen -->
+				<h4><a href="#col1Content" data-toggle="collapse">Column 1</a></h4>
+
+				<!-- With collapse in this div shows on load -->
+				<div id="col1Content" class="collapse in">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fringilla at libero at finibus a pretium justo nulla sit amet nunc. Vestibulum finibus, lacus at gravida condimentum, tellus mauris imperdiet orci.</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-8 col-xs-12">
+				<h4><a href="#col2Content" data-toggle="collapse">Column 2</a></h4>
+
+				<!-- With class collapse this div won't show on load -->
+				<div id="col2Content" class="collapse">Quisque rutrum augue odio, eu placerat diam bibendum id. Donec at fringilla leo, non varius magna. Vestibulum finibus, lacus at gravida condimentum, tellus mauris imperdiet orci, a pretium justo nulla sit amet nunc. Class aptent taciti sociosqu ad litora torquent per conubia.</div>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<h4><a href="#col3Content" data-toggle="collapse">Column 3</a></h4>
+				<div id="col3Content" class="collapse">Pellentesque vulputate faucibus leo, non blandit ante faucibus maximus. Nunc non neque laoreet, tincidunt nisl et, tristique odio. Nullam imperdiet sollicitudin neque malesuada ornare. Curabitur ultrices urna id gravida lacinia. Nunc eu neque vitae nisi luctus rhoncus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac.</div>
+			</div>
+		</div>
+	
+	</div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>
