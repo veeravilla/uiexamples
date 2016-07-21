@@ -1,0 +1,27 @@
+<h4>Angular-Bootstrap Integration</h4>
+
+<table class="table table-hover table-bordered table-striped">
+    <tr>
+      <th>No</th>
+      <th>Firstname</th>
+      <th>Country</th>
+      <th>Email</th>
+      <th>Date of Birth</th>
+      <th>Action</th>
+    </tr>   
+
+    <tr ng-repeat="row in rowData">
+          <td>{{row.sno}}</td>
+          <td>{{row.firstName}}</td>
+          <td>{{row.country}}</td>
+          <td>{{row.email}}</td>
+          <td>{{row.dob | date}}</td>
+          <td>
+             <button type="button" ng-click="editRow(row.sno)" class="btn btn-sm btn-default ">
+	           <span class="glyphicon glyphicon-edit"></span> Edit</button>	
+
+            <button type="button" ng-click="removeRow(row)" class="btn btn-sm btn-danger">
+	          <span class="glyphicon glyphicon-trash"></span></button>
+        </td>
+    </tr>
+</table>
