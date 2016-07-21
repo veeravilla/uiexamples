@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" w3-test-directive></div>
+
+<script>
+var app = angular.module("myApp", []);
+app.directive("w3TestDirective", function() {
+    return {
+        restrict : "A",
+        template : "I was made in a directive constructor!"
+    };
+});
+</script>
+
+</body>
+</html>
+
+<!-- Element name
+Attribute
+Class
+Comment
+
+E - <w3-test-directive></w3-test-directive>
+
+A - <div w3-test-directive></div>
+
+C - <div class="w3-test-directive"></div>
+
+default the value is EA
+-->
