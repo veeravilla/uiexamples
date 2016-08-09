@@ -1,0 +1,11 @@
+<div class='container-fluid'>
+	<H1>Treatment or Condition</H1>
+	<input type="text" ng-model="result" typeahead="suggestion for suggestion in  getCondition($viewValue)">
+	<input type="text" ng-model="zipCode" size="5" pattern="\d{5}" placeholder="#####" name="zipCode" />
+	<a href="#/home/careBundle/{{result}}/{{zipCode}}">Search</a>
+
+	<p>  </p><p>  </p>
+    <p style="text-align: right;">[Demo: Back Pain, 55343] </p>
+    <p>  </p>
+
+</div>

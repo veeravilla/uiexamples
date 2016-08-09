@@ -1,0 +1,21 @@
+<table align="center">
+	<tr>
+		<td style="font-size:15px">Care Bundle: {{resBundle.careBundleName}}</td>
+		<td>&nbsp;</td>
+		<td style="font-size:15px">Geo Avg Cost $ {{resBundle.geoAvgCost}}</td>
+		<td>&nbsp;</td>
+		<td style="padding-left:100px;">View <a href="{{resBundle.careBundleDetailURI}}" target="_blank">Detail</a> or <a href="{{resBundle.careBundleQualityURI}}" target="_blank">Quality</a></td>
+	</tr>
+</table>
+
+<table align="center">
+	<tr>
+		<td>Steps : </td>
+	</tr>
+	<tr ng-repeat="step in steps">
+		<td>Step  {{$index + 1}}</td>
+		<td>&nbsp;&nbsp;   {{step.stepName}}</td>
+		<td>&nbsp;&nbsp;   $ {{step.geoAvgCost}}</td>
+		<td>&nbsp;&nbsp;   <a href="{{step.stepDetailURI}}" target="_blank">Detail</a></td>
+	</tr>
+</table>
